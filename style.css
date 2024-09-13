@@ -1,0 +1,22 @@
+/* General styles for the page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the search container */
+.search-container {
+    position: absolute; /* Change to 'fixed', 'relative', or 'static' as needed */
+    top: 20px; /* Adjust top position */
+    left: 20px; /* Adjust left position */
+    /* You can also use bottom and right properties */
+}
+
+/* Style for the search input */
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+    font-size: 16px;
+}

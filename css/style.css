@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    color: black;
+
+
 }
 
 :root {
@@ -17,11 +20,57 @@
 body {
     display: flex;
     justify-content: center;
+    max-width: 1440px
 }
 
 header {
     display: flex;
     justify-content: space-between;
+}
+
+.search-bar button {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    color: #DEEBFF;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.search-bar {
+    display: flex;
+
+}
+.search-bar input {
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar i {
+    background-color: #F2F2F2;
+    color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 15px 0 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px
+}
+
+.nav-link:hover {
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    padding-right: 20px;
 }
 
 .main-container {
@@ -33,6 +82,15 @@ header {
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.filters {
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    border-radius: 35px;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
 }
 
 .card {
@@ -74,6 +132,10 @@ header {
 /****** Accommodation ***********/
 .accommodation {
     width: 65%;
+}
+.accommodation-card {
+    display: flex;
+    flex-direction: row; flex-wrap: wrap;
 }
 
 /****** Popular ***********/
@@ -119,4 +181,29 @@ header {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: -700px;
+    left: 120px;
+}
+
+.footer-section {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: justify;
+    padding-right: 150px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
+
 }
