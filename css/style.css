@@ -44,11 +44,13 @@ header {
     display: flex;
 
 }
+
 .search-bar input {
     font-size: 18px;
     justify-content: center;
     align-items: center;
 }
+
 .search-bar i {
     background-color: #F2F2F2;
     color: black;
@@ -64,13 +66,20 @@ header {
 .nav-link {
     text-decoration: none;
     color: black;
-    padding-right: 20px
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-top: 30px;
+    margin-right: 40px;
 }
 
 .nav-link:hover {
     color: #0065FC;
     border-top: 4px solid #0065FC;
-    padding-right: 20px;
+
 }
 
 .main-container {
@@ -123,7 +132,7 @@ header {
 }
 
 .accommodation-and-popular section {
-    background-color: var(--main-bg-color);
+    background-color: #d9d9d9;
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -131,16 +140,34 @@ header {
 
 /****** Accommodation ***********/
 .accommodation {
-    width: 65%;
+    width: 44%;
+    height: 136%;
 }
-.accommodation-card {
+
+.accommodation-title {
     display: flex;
-    flex-direction: row; flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accommodation-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.accommodation-cards img {
+    width: 45px;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 
 /****** Popular ***********/
 .popular {
     width: 32%;
+    height: 136px;
+
 }
 
 .popular-title {
