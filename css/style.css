@@ -2,8 +2,6 @@
 * {
     font-family: 'Raleway', sans-serif;
     color: black;
-
-
 }
 
 :root {
@@ -28,6 +26,16 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
 .search-bar button {
     display: flex;
     flex-direction: row;
@@ -37,11 +45,14 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-
+    border-color: #F2F2F2;
 }
 
 .search-bar {
     display: flex;
+    border-color: #f2f2f2;
+    padding-top: 40px;
+    padding-bottom: 20px;
 
 }
 
@@ -49,11 +60,14 @@ header {
     font-size: 18px;
     justify-content: center;
     align-items: center;
+    border-style: none;
+    font-weight: bold;
+
 }
 
 .search-bar i {
     background-color: #F2F2F2;
-    color: black;
+    color: #000;
     width: 50px;
     height: 50px;
     display: flex;
@@ -66,20 +80,23 @@ header {
 .nav-link {
     text-decoration: none;
     color: black;
-    padding-right: 40px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 50px;
+    padding-right: 40px;
 }
 
-.nav-link {
-    margin-top: 30px;
-    margin-right: 40px;
+.nav {
+    display: flex;
+
 }
 
 .nav-link:hover {
     color: #0065FC;
     border-top: 4px solid #0065FC;
-
+    display: flex;
+    flex-direction: row;
 }
 
 .main-container {
@@ -100,6 +117,23 @@ header {
     padding: 15px;
     color: black;
     text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters-buttons {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 5px;
+    margin-bottom: 35px;
+
 }
 
 .card {
@@ -125,23 +159,29 @@ header {
     color: var(--main-bg-color)
 }
 
+.empty-star {
+    color: #d9d9d9;
+}
+
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
-    display: flex;
-    justify-content: space-between;
+    background-color: #d9d9d9;
 }
 
 .accommodation-and-popular section {
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+    display: flex;
+
 }
 
 /****** Accommodation ***********/
 .accommodation {
-    width: 44%;
-    height: 136%;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 30px;
+    flex: 1;
 }
 
 .accommodation-title {
@@ -150,24 +190,45 @@ header {
     align-items: center;
 }
 
-.accommodation-cards .card {
+.accommodation-cards {
     display: flex;
-    margin-top: 33px;
 }
 
-.accommodation-cards img {
-    width: 45px;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.accommodation-card {
+    width: 250px;
+    height: 207px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3px;
+    border-radius: 20px;
+    gap: 4px;
+}
 
+.accommodation-card-rating {
+    padding: 0
+}
+
+.accommodation-card img {
+    border-radius: 20px 20px 0 0;
+    height: 124px;
+    width: 100%;
+}
+
+ .accommodation-card-title {
+    margin: 0;
+}
+
+.accommodation-card-subtitle {
+    margin: 0;
 }
 
 /****** Popular ***********/
 .popular {
-    width: 32%;
-    height: 136px;
-
+    flex: 2;
+    width: 429px;
+    height: 614px;
+    background-color: #F2F2F2;
 }
 
 .popular-title {
@@ -179,11 +240,13 @@ header {
 .popular-cards .card {
     display: flex;
     margin-top: 33px;
+    width: 369px;
+    height: 146px;
 }
 
 .popular-cards img {
-    width: 33%;
-    height: 136px;
+    width: 123px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -211,9 +274,9 @@ header {
 }
 
 footer {
-    position: absolute;
+    /* position: absolute;
     bottom: -700px;
-    left: 120px;
+    left: 120px; */
 }
 
 .footer-section {
@@ -231,6 +294,4 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-
-
 }
