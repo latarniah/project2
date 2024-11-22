@@ -279,6 +279,7 @@ header {
     width: 429px;
     height: 614px;
     background-color: #F2F2F2;
+    display: flex;
 }
 
 .popular-title {
@@ -324,10 +325,8 @@ header {
 }
 
 .things {
-    width: 1340px;
-    height: 559.02px;
     padding: 30px;
-    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .things .section-title {
@@ -337,16 +336,15 @@ header {
 
 .things-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.things-card {
-    
-}
+.things-card {}
 
 .things-card img {
     height: 380px;
-    width: 297.5px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -356,16 +354,22 @@ header {
     display: flex;
     flex-direction: column;
     height: 439px;
-    width: 297.5px;
+    width: 290px;
     border-radius: 20px;
     /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3)); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.things-card-title {
+    padding-left: 20px;
 }
 
 footer {
     /* position: absolute;
     bottom: -700px;
     left: 120px; */
+    text-decoration: none;
 }
 
 .footer-section {
@@ -376,7 +380,7 @@ footer {
     padding-right: 150px;
     text-decoration: none;
     border-radius: 20px;
-    /* padding-left: ; */
+    text-decoration: none;
 }
 
 .footer {
@@ -387,6 +391,7 @@ footer {
     text-decoration: none;
     background-color: #F2F2F2;
     text-align: justify;
+    gap: 15px;
 }
 
 .footer-about {
@@ -397,6 +402,33 @@ footer {
 ul {
     list-style: none;
     text-decoration: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-decoration-line: none;
+    gap: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style: none;
+    gap: 10px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 18px;
 }
 
 /* tablet */
