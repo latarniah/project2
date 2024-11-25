@@ -213,8 +213,6 @@ header {
 /****** Accommodation ***********/
 .accommodation {
     padding: 30px;
-    height: 614px;
-    width: 871px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -229,6 +227,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .accommodation-card a {
@@ -447,21 +446,22 @@ footer h2 {
         display: flex;
     }
 
-    .accommodation-card {
+    .accommodation-cards {
         height: 207.25px;
-        width: 268px;
+        padding-bottom: 30px;
         display: flex;
     }
 
-    .accommodation-card a {
+    .accommodation-card .card {
         display: flex;
+        width: 274px;
     }
 
 
 
     .accommodation-card img {
         height: 124px;
-        width: 268px;
+        width: 100%;
     }
 
     .accommodation-popular {
@@ -479,10 +479,27 @@ footer h2 {
 
     }
 
-    .popular-cards {
+    .popular-cards card {
         height: 146px;
         width: 274.67px;
         display: flex;
+    }
+
+    .popular-cards {
+        display: flex;
+        width: 183.11px;
+    }
+
+    .popular-cards img {
+        width: 91.56px;
+    }
+
+    .popular-cards .card-content {
+        width: 183.11px;
+    }
+
+    .card {
+        margin-left: 15px;
     }
 
     .things {
@@ -490,7 +507,7 @@ footer h2 {
         width: 924px;
     }
 
-    .things-card {
+    .things-card a {
         height: 270px;
         width: 193.5px;
     }
