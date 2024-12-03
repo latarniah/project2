@@ -240,7 +240,7 @@ header {
 }
 
 .accommodation-card a {
-    width: 240px;
+    width: 230px;
     height: 207px;
     display: flex;
     flex-direction: column;
@@ -284,7 +284,7 @@ header {
 
 /****** Popular ***********/
 .popular {
-    
+
     background-color: #F2F2F2;
     display: flex;
 }
@@ -293,12 +293,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .popular-cards .card {
     display: flex;
-    margin-top: 33px;
-    width: 369px;
+    margin: 15px;
+    width: 368px;
     height: 146px;
 }
 
@@ -332,12 +334,13 @@ header {
 }
 
 .things {
-    padding: 30px;
     margin-bottom: 30px;
 }
 
 .things .section-title {
     padding-bottom: 25px;
+    padding-left: 35px;
+    margin-top: 45px;
 
 }
 
@@ -385,21 +388,18 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding-right: 150px;
+    flex: 1;
     text-decoration: none;
-    border-radius: 20px;
     text-decoration: none;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
+    padding-left: 25px;
     text-decoration: none;
     background-color: #F2F2F2;
     text-align: justify;
-    gap: 15px;
 }
 
 .footer-about {
@@ -444,9 +444,7 @@ footer h2 {
     body {
         /* background-color: red; */
         display: flex;
-
         height: 1893.52px;
-        width: 1024px;
     }
 
     .accommodation {
@@ -476,11 +474,11 @@ footer h2 {
     }
 
     .popular {
-        
+
         display: flex;
         padding: 30px;
         gap: 20px;
-            }
+    }
 
     .popular-cards card {
         height: 146px;
@@ -490,7 +488,10 @@ footer h2 {
 
     .popular-cards {
         display: flex;
-          }
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
 
     .popular-cards img {
         width: 91.56px;
@@ -500,13 +501,9 @@ footer h2 {
         width: 183.11px;
     }
 
-    .card {
-        margin-left: 15px;
-    }
-
-    .things {
-        height: 390.02px;
-        width: 924px;
+    .popular-cards .card {
+        margin: 0;
+               width: 250px;
     }
 
     .things-card a {
@@ -533,7 +530,9 @@ footer h2 {
     }
 
 
-
+    .footer {
+        gap: 145;
+    }
 
 }
 
