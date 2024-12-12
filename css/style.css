@@ -503,7 +503,7 @@ footer h2 {
 
     .popular-cards .card {
         margin: 0;
-               width: 250px;
+        width: 250px;
     }
 
     .things-card a {
@@ -602,5 +602,83 @@ footer h2 {
     .things-card img {
         height: 141px;
         width: 315px;
+    } */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .nav-link {
+        margin-right: 0;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .nav-link:hover {
+        border-top: none;
+        border-bottom: 1.5px solid #0065FC;
+        padding-bottom: 16px ;
+
+    }
+
+    .nav {
+        width: 100%;
+        border-bottom: 2px #d9d9d9 solid;
+        }
+
+    .filter-box {
+        flex-wrap: wrap;
+    }
+
+    .search-bar button {
+        width: 50px;
+        height: 49px;
+        border-radius: 15px 15px 15px 15px;
+        
+    }
+
+    .search-text{
+        display: none;
+    }
+
+    .search-bar i {
+       
+        width: 49px;
+        height: 49px;
+        
+        border-radius: 15px 0 0 15px;
+    }
+
+
+    .main-container {
+        padding: 0;
+    }
+
+     .popular-cards .card {
+        width: 335px;
+        height: 146px;
+    }
+
+        .accommodation-card a {
+            width: 315px;
+            height: 207px;
+
+    .things-card a {
+        height: 200px;
+        width: 315px;
+    }
+
+    .things-card img {
+        height: 141px;
+        width: 315px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
