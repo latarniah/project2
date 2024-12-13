@@ -532,25 +532,23 @@ footer h2 {
     }
 
 
-    .footer {
-        gap: 145;
-    }
+   
 
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {
-        header {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .logo {
-        padding-bottom: 25px;
-    
+        padding-bottom: 10px;
+
     }
-    
+
 
     .nav-link {
         margin-right: 0;
@@ -561,14 +559,14 @@ footer h2 {
     .nav-link:hover {
         border-top: none;
         border-bottom: 1.5px solid #0065FC;
-        padding-bottom: 16px ;
+        padding-bottom: 16px;
 
     }
 
     .nav {
         width: 100%;
         border-bottom: 2px #d9d9d9 solid;
-        }
+    }
 
     .filter-box {
         flex-wrap: wrap;
@@ -578,15 +576,15 @@ footer h2 {
         width: 50px;
         height: 49px;
         border-radius: 15px 15px 15px 15px;
-        
+
     }
 
-    .search-text{
+    .search-text {
         display: none;
     }
 
     .search-bar i {
-       
+
         width: 49px;
         height: 49px;
         background-color: #0065FC;
@@ -598,41 +596,48 @@ footer h2 {
         padding: 0;
     }
 
-     .popular-cards .card {
+    .popular-cards .card {
         width: 335px;
-     }
-
-
-        .accommodation-card a {
-            width: 300px;
-                }
-
-    /* .things-card {
-            width: 315px;
-            gap: 0;
-    } */
-
-    /* .things-card img {
-        height: 141px;
-        width: 315px;
-        border-radius: 15px 15px 0 0;
-    } */ */ */ */
-
-    .footer {
-        flex-direction: column;
-
     }
-    /* footer ul {
+
+    .popular {
+        background-color: #F2F2F2;
+    }
+
+
+    .accommodation-card a {
+        width: 300px;
+        height: 200px;
+    }
+
+    .accommodation section {
+        background-color: #ffff;
+        order: 2;
+    }
+
+    .accommodation-popular {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    footer a {
-        text-decoration: none;
+        flex-direction: column-reverse;
+        background-color: #ffff;
+
     }
 
-;        
-    } */ */
+    .things-card a {
+        height: 200px;
+        width: 300px;
+        gap: 0;
+    }
 
-}
+    .things-card img {
+        width: 300px;
+        height: 140px;
+        border-radius: 15px 15px 0 0;
+    }
+
+         .footer {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    }
