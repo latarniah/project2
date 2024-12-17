@@ -77,7 +77,11 @@ header {
 
 }
 
-.search-bar i {
+.search-text {
+    color: white;
+}
+
+.search-pin {
     background-color: #F2F2F2;
     color: #000;
     width: 50px;
@@ -88,6 +92,11 @@ header {
     font-size: 18px;
     border-radius: 15px 0 0 15px;
 }
+
+.search-icon {
+    display: none;
+}
+
 
 
 .nav-link {
@@ -179,6 +188,11 @@ header {
 
 }
 
+.info-text {
+    text-decoration: none;
+    font-weight: 100;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -213,7 +227,8 @@ header {
 
 }
 
-.accommodation-popular section {
+.popular,
+.accommodation {
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
@@ -532,7 +547,7 @@ footer h2 {
     }
 
 
-   
+
 
 }
 
@@ -542,6 +557,10 @@ footer h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    body {
+        margin: 15px;
     }
 
     .logo {
@@ -554,12 +573,14 @@ footer h2 {
         margin-right: 0;
         flex: 1;
         justify-content: center;
+        padding-bottom: 16px;
     }
 
     .nav-link:hover {
         border-top: none;
-        border-bottom: 1.5px solid #0065FC;
-        padding-bottom: 16px;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 14px;
+        padding-top: 20px;
 
     }
 
@@ -576,6 +597,7 @@ footer h2 {
         width: 50px;
         height: 49px;
         border-radius: 15px 15px 15px 15px;
+        background-color: #0065FC;
 
     }
 
@@ -583,12 +605,18 @@ footer h2 {
         display: none;
     }
 
-    .search-bar i {
+    .search-pin {
 
         width: 49px;
         height: 49px;
-        background-color: #0065FC;
+        /* background-color: #0065FC; */
         border-radius: 15px 0 0 15px;
+    }
+
+    .search-icon {
+        display: block;
+        color: white;
+
     }
 
 
@@ -610,9 +638,9 @@ footer h2 {
         height: 200px;
     }
 
-    .accommodation section {
-        background-color: #ffff;
-        order: 2;
+    .accommodation {
+        background-color: white;
+        padding: 10px;
     }
 
     .accommodation-popular {
@@ -634,10 +662,10 @@ footer h2 {
         border-radius: 15px 15px 0 0;
     }
 
-         .footer {
-            display: flex;
-            flex-direction: column;
-
-        }
+    .footer {
+        display: flex;
+        flex-direction: column;
 
     }
+
+}
