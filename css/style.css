@@ -461,7 +461,6 @@ footer h2 {
     body {
         /* background-color: red; */
         display: flex;
-        height: 1893.52px;
     }
 
     .accommodation {
@@ -588,6 +587,14 @@ footer h2 {
         flex-wrap: wrap;
     }
 
+    .search-bar {
+        justify-content: center;
+    }
+
+    .search-bar input {
+        max-width: 170px;
+    }
+
     .search-bar button {
         width: 50px;
         height: 49px;
@@ -606,6 +613,7 @@ footer h2 {
         height: 49px;
         /* background-color: #0065FC; */
         border-radius: 15px 0 0 15px;
+        min-width: 49px;
     }
 
     .search-icon {
@@ -631,12 +639,12 @@ footer h2 {
 
     .accommodation-card a {
         height: 200px;
-        width: 265px;
+        max-width: 265px;
     }
 
-    .accommodation-card { 
+    .accommodation-card {
         max-width: 100%;
-       height: 200px;
+        height: 200px;
 
     }
 
@@ -651,6 +659,17 @@ footer h2 {
         flex-direction: column-reverse;
         background-color: #ffff;
 
+    }
+
+    .things-card {
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .things-cards {
+        flex-direction: column;
+        align-items: center;
     }
 
     .things-card a {
